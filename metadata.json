@@ -1,0 +1,5 @@
+{
+  "name": "Employee Management API",
+  "description": "A REST API for managing employee records using Node.js, Express, and JSON file storage.",
+  "requestFramePermissions": []
+}

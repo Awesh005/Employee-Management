@@ -1,0 +1,22 @@
+[
+  {
+    "id": "emp-001",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "department": "IT",
+    "salary": 75000,
+    "status": "Active",
+    "createdAt": "2026-03-11T11:27:15.000Z",
+    "updatedAt": "2026-03-11T11:27:15.000Z"
+  },
+  {
+    "id": "emp-002",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "department": "HR",
+    "salary": 65000,
+    "status": "Active",
+    "createdAt": "2026-03-11T11:27:15.000Z",
+    "updatedAt": "2026-03-11T11:27:15.000Z"
+  }
+]
