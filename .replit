@@ -1,0 +1,10 @@
+modules = ["nodejs-20"]
+
+run = "npm run dev"
+
+[deployment]
+build = ["npm", "run", "build"]
+run = ["npm", "run", "start"]
+
+[env]
+NODE_ENV = "development"
