@@ -1,49 +1,224 @@
 # Employee Management API
 
-Employee management app with an Express backend and Vite React frontend in one Replit-friendly project.
+## Overview
+
+The **Employee Management API** is a RESTful backend application built using **Node.js and Express.js**.
+It provides functionality to manage employee records including creating, retrieving, updating, and deleting employee data.
+
+This project demonstrates backend development concepts such as **REST API design, input validation, error handling, filtering, pagination, and modular project architecture**.
+
+---
+
+## Developer Information
+
+**Name:** Mohammad Avesh
+**Email:** [roshanawesh@gmail.com](mailto:roshanawesh@gmail.com)
+**College:** Jharkhand Rai University
+**Skill Track:** Java & API Development
+
+---
+
+## Live API
+
+Render Deployment:
+
+```
+https://employee-management-bw6s.onrender.com/
+```
+
+---
 
 ## Features
 
-- Add, update, and delete employees
-- Search by employee name
-- Filter by department
-- Update employee status
-- Pagination support on the API
-- Single deployment for frontend and backend
+### Core Features
 
-## Local Run
+* Create Employee
+* Get All Employees
+* Get Employee by ID
+* Update Employee
+* Delete Employee
 
-```bash
+### Advanced Features
+
+* Search employees by name
+* Pagination support
+* Filter employees by department
+* Update employee status
+* Input validation using express-validator
+* Global error handling middleware
+* Automatic timestamps (createdAt, updatedAt)
+
+---
+
+## Tech Stack
+
+Backend:
+
+* Node.js
+* Express.js
+
+Other Tools:
+
+* REST API
+* JSON file for data storage
+* express-validator
+
+---
+
+## API Endpoints
+
+### Create Employee
+
+POST `/employees`
+
+Example Request Body:
+
+```
+{
+  "name": "Mohammad Avesh",
+  "email": "roshanawesh@gmail.com",
+  "department": "IT",
+  "salary": 45000,
+  "status": "Active"
+}
+```
+
+---
+
+### Get All Employees
+
+GET `/employees`
+
+Optional Query Parameters:
+
+```
+?page=1
+&limit=5
+&department=IT
+```
+
+---
+
+### Search Employees
+
+GET `/employees/search?name=awesh`
+
+---
+
+### Get Employee by ID
+
+GET `/employees/:id`
+
+Example:
+
+```
+GET /employees/101
+```
+
+---
+
+### Update Employee
+
+PUT `/employees/:id`
+
+---
+
+### Delete Employee
+
+DELETE `/employees/:id`
+
+---
+
+### Update Employee Status
+
+PATCH `/employees/:id/status`
+
+Example Request:
+
+```
+{
+  "status": "On Leave"
+}
+```
+
+---
+
+## Project Structure
+
+```
+employee-management
+│
+├── server.js
+├── routes
+│   └── employeeRoutes.js
+│
+├── controllers
+│   └── employeeController.js
+│
+├── middleware
+│   └── errorHandler.js
+│
+├── data
+│   └── employees.json
+│
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/Awesh005/Employee-Management.git
+```
+
+Navigate to the project folder:
+
+```
+cd Employee-Management
+```
+
+Install dependencies:
+
+```
 npm install
-npm run dev
 ```
 
-The app runs on `http://localhost:3000` by default.
+Run the server:
 
-## Replit Deployment
-
-This repo now includes a [`.replit`](/d:/Awesh-DRIVE%20D/PROJECTS/employee-management-api/.replit) file for Replit.
-
-Workspace run command:
-
-```bash
-npm run dev
+```
+node server.js
 ```
 
-Deployment build command:
+Server will run on:
 
-```bash
-npm run build
+```
+http://localhost:5000
 ```
 
-Deployment run command:
+---
 
-```bash
-npm run start
+## Example API Test
+
+Get employees:
+
+```
+http://localhost:5000/employees
 ```
 
-Notes:
+---
 
-- The server uses `process.env.PORT`, so it will bind correctly on Replit.
-- In production, Express serves the built frontend from `dist/`.
-- API routes stay available under `/employees` and `/api/health`.
+## Future Improvements
+
+* Database integration (MongoDB / PostgreSQL)
+* Authentication using JWT
+* Role-based access control
+* Swagger API documentation
+
+---
+
+## License
+
+This project is created for learning purposes and technical assessment.
