@@ -1,8 +1,8 @@
 [
   {
     "id": "emp-001",
-    "name": "John Doe",
-    "email": "john.doe@example.com",
+    "name": "Md Awesh",
+    "email": "roshanawesh@gmail.com",
     "department": "IT",
     "salary": 75000,
     "status": "Active",
@@ -11,12 +11,22 @@
   },
   {
     "id": "emp-002",
-    "name": "Jane Smith",
-    "email": "jane.smith@example.com",
+    "name": "akash kumar",
+    "email": "akashk01@gmail.com",
     "department": "HR",
     "salary": 65000,
     "status": "Active",
     "createdAt": "2026-03-11T11:27:15.000Z",
     "updatedAt": "2026-03-11T11:27:15.000Z"
+  },
+  {
+    "id": "emp-1773295546987",
+    "name": "Imperial Shamiyana Cloth",
+    "email": "roshanawesh@gmail.com",
+    "department": "IT",
+    "salary": 344242,
+    "status": "Active",
+    "createdAt": "2026-03-12T06:05:46.986Z",
+    "updatedAt": "2026-03-12T06:05:46.986Z"
   }
 ]
